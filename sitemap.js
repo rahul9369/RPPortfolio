@@ -10,6 +10,7 @@ const urls = [
   { loc: "#skills", priority: 0.8 },
   { loc: "#projects", priority: 0.7 },
   { loc: "#contact", priority: 0.6 },
+  { loc: "#hero", priority: 0.6 },
 ];
 
 // Generate the XML content

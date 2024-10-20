@@ -1,4 +1,4 @@
-// Projects.js
+import React from "react";
 import { motion } from "framer-motion";
 // Import images from assets folder
 import ecommerceImage from "../Assets/Shoping App.png";
@@ -12,7 +12,7 @@ const Projects = () => {
       img: ecommerceImage, // Imported image
     },
     {
-      title: "Chating Application",
+      title: "Chat Application",
       img: ChatAppImage, // Imported image
     },
     {
@@ -20,26 +20,6 @@ const Projects = () => {
       img: blogAppImage, // Imported image
     },
   ];
-
-  // Framer Motion settings
-  const containerVariants = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delay: 0.2,
-        duration: 0.6,
-        ease: "easeOut",
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
-  };
 
   return (
     <section
@@ -50,21 +30,21 @@ const Projects = () => {
           className="text-4xl font-bold mb-12"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}>
+          transition={{ duration: 0.8 }} // Slower duration for the title
+        >
           Projects
         </motion.h2>
 
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              variants={cardVariants}
-              whileHover={{ scale: 1.05 }}
-              className="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              className="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              initial={{ opacity: 0, scale: 0.5 }} // Initial state with scale down
+              whileInView={{ opacity: 1, scale: 1 }} // Animate scale up when in view
+              transition={{ duration: 1 }} // Slower duration for smooth scaling effect
+              viewport={{ once: false }} // Reset animation on leave
+            >
               <img
                 src={project.img}
                 alt={project.title}
@@ -73,7 +53,7 @@ const Projects = () => {
               <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
