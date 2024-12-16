@@ -5,10 +5,12 @@ import Skill from "./Components/Skill";
 import Project from "./Components/Project";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import Experence from "./Components/Experence";
 import { Helmet } from "react-helmet";
+
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gradient-to-br from-[#1e3a8a] via-[#111827] to-[#1e3a8a] min-h-screen">
       <Helmet>
         {/* Primary Meta Tags */}
         <title>Rahul Prajapati - Portfolio</title>
@@ -61,6 +63,7 @@ function App() {
       <About />
       <Skill />
       <Project />
+      <Experence />
       <Contact />
       <Footer />
     </div>

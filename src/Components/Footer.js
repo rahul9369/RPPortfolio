@@ -31,42 +31,43 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className="flex justify-center mb-4">
           <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mx-2 hover:text-yellow-500 transition-colors">
-            <FaGithub size={24} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/rahul-prajapati-164641228"
             target="_blank"
             rel="noopener noreferrer"
             className="mx-2 hover:text-yellow-500 transition-colors">
             <FaLinkedin size={24} />
           </a>
           <a
-            href="https://twitter.com/yourusername"
+            href="https://github.com/rahul9369"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mx-2 hover:text-yellow-500 transition-colors">
+            <FaGithub size={24} />
+          </a>
+
+          <a
+            href="https://x.com/RahulPraja40352"
             target="_blank"
             rel="noopener noreferrer"
             className="mx-2 hover:text-yellow-500 transition-colors">
             <FaTwitter size={24} />
           </a>
           <a
-            href="https://www.facebook.com/yourfacebook"
+            href="https://m.facebook.com/profile.php?id=100042183406787"
             target="_blank"
             rel="noopener noreferrer"
             className="mx-2 hover:text-yellow-500 transition-colors">
             <FaFacebook size={24} />
           </a>
           <a
-            href="https://www.instagram.com/yourinstagram"
+            href="https://www.instagram.com/_rahul_prajapati_1409/"
             target="_blank"
             rel="noopener noreferrer"
             className="mx-2 hover:text-yellow-500 transition-colors">
             <FaInstagram size={24} />
           </a>
           <a
-            href="https://www.youtube.com/channel/youryoutube"
+            href="https://youtube.com/@rahulprajapati9083?si=Nn9e6aGT39WPHD3u"
             target="_blank"
             rel="noopener noreferrer"
             className="mx-2 hover:text-yellow-500 transition-colors">

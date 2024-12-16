@@ -17,16 +17,16 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center text-white bg-black">
+      className="relative min-h-screen flex items-center bg-gradient-to-br from-[#38b2ac] via-[#1e3a8a] to-[#2e4067] justify-center text-white bg-black">
       {/* Video Background */}
-      <video
+      {/* <video
         className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         loop
         muted>
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
 
       {/* Overlay to darken the video */}
       <div className="absolute inset-0 bg-black bg-opacity-30"></div>
@@ -62,42 +62,42 @@ const Hero = () => {
       {/* Social Media Icons on the Right */}
       <div className="absolute right-10 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 z-10">
         <a
-          href="https://www.linkedin.com/in/your-linkedin"
+          href="https://www.linkedin.com/in/rahul-prajapati-164641228"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-yellow-500 transition-colors">
           <FaLinkedin size={30} />
         </a>
         <a
-          href="https://github.com/your-github"
+          href="https://github.com/rahul9369"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-yellow-500 transition-colors">
           <FaGithub size={30} />
         </a>
         <a
-          href="https://twitter.com/your-twitter"
+          href="https://x.com/RahulPraja40352"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-yellow-500 transition-colors">
           <FaTwitter size={30} />
         </a>
         <a
-          href="https://www.facebook.com/your-facebook"
+          href="https://m.facebook.com/profile.php?id=100042183406787"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-yellow-500 transition-colors">
           <FaFacebook size={30} />
         </a>
         <a
-          href="https://www.instagram.com/your-instagram"
+          href="https://www.instagram.com/_rahul_prajapati_1409/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-yellow-500 transition-colors">
           <FaInstagram size={30} />
         </a>
         <a
-          href="https://www.youtube.com/channel/your-youtube"
+          href="https://youtube.com/@rahulprajapati9083?si=Nn9e6aGT39WPHD3u"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-yellow-500 transition-colors">
