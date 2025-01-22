@@ -11,7 +11,7 @@ const experiences = [
     duration: "Dec 2024 - Present",
     description:
       "Developed responsive web interfaces using React.js and Tailwind CSS. Enhanced state management with Redux.js and implemented interactive features using JavaScript.",
-    logo: "../Assets/claw.png", // Specific logo or use default
+    logo: "https://www.clawlaw.in/static/media/clawlogo.a04ba20f4a21dccddff1.png", // Specific logo or use default
   },
   {
     role: "Frontend Developer Intern",
@@ -19,14 +19,14 @@ const experiences = [
     duration: "June 2024 - Oct 2024",
     description:
       "Built dynamic web interfaces using React.js and JavaScript. Collaborated in an Agile environment to deliver user-friendly web solutions on time.",
-    logo: "../Assets/khana.png", // Specific logo or use default
+    logo: "https://media.licdn.com/dms/image/v2/D560BAQE7cmCvDwL-FQ/img-crop_100/img-crop_100/0/1716120440984?e=1745452800&v=beta&t=0qYAMjnc6npR5v4EmI0jlhTLUD1AoJe3kka9-RSKOos", // Specific logo or use default
   },
   {
     role: "Machine Learning Enthusiast",
-    company: "NPTEL (IIT Kanpur)",
-    duration: "Completed in 2023",
+    company: "NPTEL (IIT Madras)",
+    duration: "Completed in 2024",
     description:
-      "Completed an advanced course on Machine Learning under the guidance of IIT Kanpur. Learned essential concepts including supervised learning, neural networks, and real-world applications.",
+      "Completed an advanced course on Machine Learning under the guidance of IIT Madras. Learned essential concepts including supervised learning, neural networks, and real-world applications.",
     logo: null, // No logo, will use default
   },
 ];
@@ -47,7 +47,7 @@ const Experience = () => {
               <img
                 src={exp.logo || defaultLogo} // Use default logo if no logo is provided
                 alt={`${exp.company} Logo`}
-                className="w-16 h-16 object-contain rounded-lg bg-white p-2 shadow-md mb-4"
+                className="w-16 h-16 bg-gray-700 object-contain rounded-lg  p-2 shadow-md mb-4"
               />
               {/* Details Section */}
               <div className="text-center">
